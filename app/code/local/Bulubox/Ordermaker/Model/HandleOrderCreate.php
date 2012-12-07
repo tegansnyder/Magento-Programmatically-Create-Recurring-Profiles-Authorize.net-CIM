@@ -10,7 +10,7 @@
 require_once('app/code/community/ParadoxLabs/AuthorizeNetCim/Model/AuthnetCIM.class.php');
 
 
-class Bulubox_Observer_Model_HandleOrderCreate extends Mage_Core_Model_Abstract
+class Bulubox_Ordermaker_Model_HandleOrderCreate extends Mage_Core_Model_Abstract
 {
     private $_storeId = '1';
     private $_groupId = '1';
@@ -125,23 +125,6 @@ class Bulubox_Observer_Model_HandleOrderCreate extends Mage_Core_Model_Abstract
 	                    'telephone' => '',
 	                    'fax' => ''
 	                ),
-	//                'shipping_address' => array(
-	//                    'customer_address_id' => $this->_sourceCustomer->getDefaultShipping(),
-	//                    'prefix' => '',
-	//                    'firstname' => $this->_sourceCustomer->getFirstname(),
-	//                    'middlename' => '',
-	//                    'lastname' => $this->_sourceCustomer->getLastname(),
-	//                    'suffix' => '',
-	//                    'company' => '',
-	//                    'street' => array($shippingAddress['street'],''),
-	//                    'city' => $shippingAddress['city'],
-	//                    'country_id' => $shippingAddress['country_id'],
-	//                    'region' => $shippingAddress['region'],
-	//                    'region_id' => $shippingAddress['region_id'],
-	//                    'postcode' => $shippingAddress['postcode'],
-	//                    'telephone' => $shippingAddress['telephone'],
-	//                    'fax' => ''
-	//                ),
 	                'shipping_method' => 'flatrate_flatrate',
 	                'comment' => array(
 	                    'customer_note' => 'This order has been programmatically created via import script.'
