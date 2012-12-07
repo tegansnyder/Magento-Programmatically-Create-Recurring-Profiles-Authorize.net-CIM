@@ -39,7 +39,7 @@ Edit the Authorize.NET constructor settings in HandleOrderCreate.php (app/code/l
 		Add (code below):
 		
 
-		[code]
+		[php]
 		
 			try {
 			
@@ -65,7 +65,7 @@ Edit the Authorize.NET constructor settings in HandleOrderCreate.php (app/code/l
 			
 				}
 		
-		[/code]		
+		[/php]		
 
 
 > NEXT--------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ Edit the Authorize.NET constructor settings in HandleOrderCreate.php (app/code/l
 
 		Add this:
 	
-		[code]
+		[php]
 		
 			if (Mage::registry('recurly_move')) {
 				
@@ -84,7 +84,7 @@ Edit the Authorize.NET constructor settings in HandleOrderCreate.php (app/code/l
 				
 			}
 			
-		[/code]
+		[/php]
 	
 
 ---------------------------------------------------------------------------------------
