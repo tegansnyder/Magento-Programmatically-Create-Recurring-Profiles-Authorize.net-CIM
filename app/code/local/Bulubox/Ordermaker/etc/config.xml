@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Bulubox_Ordermaker>
+            <version>0.1.0</version>
+        </Bulubox_Ordermaker>
+    </modules>
+    <global>
+        <models>
+            <myobserver>
+                <class>Bulubox_Ordermaker_Model</class>
+            </myobserver>
+        </models>
+    </global>
+ </config>
