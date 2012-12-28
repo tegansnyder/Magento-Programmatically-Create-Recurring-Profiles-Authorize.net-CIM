@@ -1,3 +1,0 @@
-<?php #!/usr/bin/php
-
-?>
